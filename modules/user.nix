@@ -3,7 +3,6 @@
     isNormalUser = true;
     extraGroups = userConfig.groups;
     # Password authentication disabled - SSH key authentication only
-    # sudo still requires password as security.sudo.wheelNeedsPassword is set to true
     # To set a password after deployment: sudo passwd admin
     initialPassword = "changeme";
     openssh.authorizedKeys.keys = [

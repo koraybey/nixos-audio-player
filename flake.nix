@@ -11,7 +11,6 @@
         "${nixpkgs}/nixos/modules/installer/sd-card/sd-image-aarch64.nix"
         ./configuration.nix
         ({
-          pkgs,
           lib,
           config,
           ...
@@ -25,11 +24,6 @@
               makeModulesClosure = x:
                 prev.makeModulesClosure (x // {allowMissing = true;});
             })
-          ];
-          environment.systemPackages = with pkgs; [
-            alsa-utils
-            nqptp
-            shairport-sync-airplay2
           ];
           sdImage = {
             compressImage = false;

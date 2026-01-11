@@ -1,10 +1,11 @@
 {...}: {
   imports = [
+    ./modules/cd-player
     ./modules/common.nix
     ./modules/hardware.nix
     ./modules/networking.nix
     ./modules/optimization.nix
-    ./modules/services.nix
+    ./modules/services
     ./modules/user.nix
   ];
 
@@ -16,7 +17,7 @@
     };
   };
 
-  security.sudo.wheelNeedsPassword = true;
+  security.sudo.wheelNeedsPassword = false;
 
   programs.nix-ld.enable = true;
 
