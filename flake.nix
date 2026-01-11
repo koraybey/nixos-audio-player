@@ -1,5 +1,5 @@
 {
-  description = "AirPlay audio receiver with USB sound card output, CD and turntable playback";
+  description = "A NixOS-based audio streaming system for Raspberry Pi Zero 2 W with AirPlay 1 and CD playback support";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11-small";
   };
